@@ -1,0 +1,83 @@
+.logotitle {
+    width: 100%;
+    float: left;
+    clear: both;
+    color: white;
+}
+
+.logotitle span,
+.logotitle div {
+    float: left;
+}
+.logoscroll {
+    display: none;
+    margin-left: 20px;
+}
+
+.logoscroll.active {
+    display: block;
+}
+
+.features article {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.features article h3,
+.features article p {
+    color: white;
+    font-size: bold;
+    line-height: 24px;
+    font-size: 1.2em;
+}
+
+.features article:first-child {
+    background-image: url('/images/blue.jpg');
+}
+
+.features article:nth-child(2) {
+    background-image: url('/images/green.jpg');
+}
+
+.features article:nth-child(3) {
+    background-image: url('/images/pink.jpg');
+}
+
+.features article:last-child {
+    background-image: url('/images/orange.jpg');
+}
+
+/*****************************************************
+ * User stories
+ ***************************************************/
+
+ .user-story article {
+    background-color: #efefef;
+    height: 250px;
+    width: 100%;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.user {
+    height: 250px;
+    width: 250px;
+    float: left;
+}
+
+.user img {
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+.story {
+    padding: 50px;
+    float: left;
+    width: calc(100% - 250px);
+}
+
+.story p,
+.story h3 {
+    color: #444;
+    margin: 0;
+}
