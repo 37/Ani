@@ -1,8 +1,3 @@
-/*
-    Solid State by HTML5 UP
-    html5up.net | @n33co
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 (function($) {
 
@@ -167,8 +162,14 @@
 
 $(document).ready(function(){
     if ('.logoscroll'){
-        setTimeout(nextTitle, 4000);
+        setTimeout(nextTitle, 3000);
     }
+
+    $('body').on('change', '#oInput3', function(){
+        var reflect = $('#oFormCostDollars');
+        var currValue = this.options[this.selectedIndex].value;
+        $(reflect).html(100 + (45 * currValue));
+    });
 });
 
 
@@ -177,6 +178,7 @@ function nextTitle(){
     var active = $('.logoscroll.active');
     var length = elements.length;
     var activeIndex;
+    var delay;
 
     for (i = 0; i < length; i++){
         if ($(elements[i]).hasClass('active')){
@@ -190,12 +192,14 @@ function nextTitle(){
         case (length - 1) :
             $(active).removeClass('active');
             $(elements[0]).addClass('active');
+            delay = 4000;
             break;
         default :
             $(active).removeClass('active');
             $(elements[(activeIndex + 1)]).addClass('active');
+            delay = 1000;
             break;
     }
 
-    setTimeout(nextTitle, 3000);
+    setTimeout(nextTitle, delay);
 }
