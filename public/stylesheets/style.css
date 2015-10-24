@@ -25,8 +25,6 @@
 .features article h3,
 .features article p {
     color: white;
-    font-size: bold;
-    line-height: 24px;
     font-size: 1.2em;
 }
 
