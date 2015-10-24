@@ -2378,6 +2378,13 @@
 						ul.actions.small li:first-child {
 							padding-top: 0;
 						}
+				.inner div.image, .inner div.image img {
+				    width: 100%!important;
+				    float: left;
+				    clear: both;
+				    padding: 0 10px;
+				    box-sizing: content-box;
+				}
 
 			}
 

@@ -79,3 +79,23 @@
     color: #444;
     margin: 0;
 }
+
+.user-story {}
+
+
+/*****************************************************
+ * Media queries
+ ***************************************************/
+
+@media screen and (max-width: 600px) {
+
+    .user-story article {
+        height: auto;
+        width: 250px;
+        margin: 0 calc(50% - 125px) 50px calc(50% - 125px);
+    }
+
+    .story {
+        width: 100%;
+    }
+}
